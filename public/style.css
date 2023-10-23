@@ -3,12 +3,38 @@ body {
     margin: 20px;
   }
   
+  header {
+    display: flex;
+    align-items: center;
+    background-color: skyblue;
+    padding: 10px;
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  .icons {
+    margin-left: auto;
+  }
+  
+  .icon {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  
   .notes-container {
     display: flex;
   }
   
   .notes-list {
-    width: 30%;
+    width: 25%;
     border-right: 1px solid #ccc;
     padding-right: 20px;
   }
@@ -21,24 +47,28 @@ body {
   .notes-list li {
     cursor: pointer;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .trash-icon {
+    cursor: pointer;
+    margin-left: auto;
   }
   
   .note-form {
-    width: 70%;
+    width: 75%;
     padding-left: 20px;
   }
   
-  .note-form input,
-  .note-form textarea {
+  .note-title,
+  .note-text {
     width: 100%;
     margin-bottom: 10px;
   }
   
-  .note-form button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  .note-title {
+    font-weight: bold;
+    font-size: 1.2em;
   }
   

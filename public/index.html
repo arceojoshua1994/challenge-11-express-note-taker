@@ -4,11 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Note Taker</title>
-  <link rel="stylesheet" href="/public/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/style.css"> 
 </head>
 <body>
-  <h1>Welcome to Note Taker</h1>
+  <header class="bg-info p-2">
+    <h1 class="title text-white">Note Taker</h1>
+    <div class="icons">
+      <span class="glyphicon glyphicon-floppy-disk text-white icon" id="save-icon"></span>
+      <span class="glyphicon glyphicon-plus text-white icon" id="plus-icon"></span>
+    </div>
+  </header>
   <a href="/notes">Go to Notes</a>
-  <script src="/public/script.js"></script>
+  <script src="public/script.js"></script>
 </body>
 </html>

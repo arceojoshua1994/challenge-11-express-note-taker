@@ -4,20 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notes</title>
-  <link rel="stylesheet" href="/public/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/style.css"> 
 </head>
 <body>
-  <h1>Notes</h1>
+  <header class="bg-info p-2">
+    <h1 class="title text-white">Note Taker</h1>
+    <div class="icons">
+      <span class="glyphicon glyphicon-floppy-disk text-white icon" id="save-icon"></span>
+      <span class="glyphicon glyphicon-plus text-white icon" id="plus-icon"></span>
+    </div>
+  </header>
   <div class="notes-container">
     <div class="notes-list">
       <ul id="note-list"></ul>
     </div>
     <div class="note-form">
-      <input type="text" id="note-title" placeholder="Title">
-      <textarea id="note-text" placeholder="Note"></textarea>
-      <button id="save-note">Save</button>
+      <input type="text" id="note-title" class="note-title form-control mb-3" placeholder="Title">
+      <textarea id="note-text" class="note-text form-control mb-3" placeholder="Note"></textarea>
+      <button id="save-note" class="btn btn-primary">Save</button>
     </div>
   </div>
-  <script src="/public/script.js"></script>
+  <script src="public/script.js"></script>
 </body>
 </html>
