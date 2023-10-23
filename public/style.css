@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .notes-container {
+    display: flex;
+  }
+  
+  .notes-list {
+    width: 30%;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+  }
+  
+  .notes-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notes-list li {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .note-form {
+    width: 70%;
+    padding-left: 20px;
+  }
+  
+  .note-form input,
+  .note-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .note-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
