@@ -8,26 +8,25 @@
   <link rel="stylesheet" href="public/style.css"> 
 </head>
 <body>
-  <header class="bg-info p-2">
+  <header class="bg-info p-2 d-flex justify-content-between align-items-center">
     <h1 class="title text-white">Note Taker</h1>
     <div class="icons">
-      <span class="glyphicon glyphicon-floppy-disk text-white icon" id="save-icon"></span>
-      <span class="glyphicon glyphicon-plus text-white icon" id="plus-icon"></span>
+      <i class="bi bi-save text-white icon" id="save-icon"></i>
+      <a href="/">
+        <i class="bi bi-house-door text-white icon"></i>
+      </a>
     </div>
   </header>
-  <section class="notes-container">
-   
+  <div class="notes-container">
     <div class="notes-list">
-        <ul id="note-list"></ul>
-      </div>
-      
-      <div class="note-form">
-        <input type="text" id="note-title" class="note-title form-control mb-3" placeholder="Title">
-        <textarea id="note-text" class="note-text form-control mb-3" placeholder="Note"></textarea>
-        <button id="save-note" class="btn btn-primary">Save</button>
-      </div>
-
-</section>
+      <ul id="note-list"></ul>
+    </div>
+    <div class="note-form">
+      <input type="text" id="note-title" class="note-title form-control mb-3" placeholder="Title">
+      <textarea id="note-text" class="note-text form-control mb-3" placeholder="Note"></textarea>
+      <button id="save-note" class="btn btn-primary">Save</button>
+    </div>
+  </div>
   <script src="/public/script.js"></script>
 </body>
 </html>
