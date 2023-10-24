@@ -32,6 +32,11 @@ body {
   .notes-container {
     display: flex;
   }
+
+  .notes-list,
+.note-form {
+  display: inline-block;
+}
   
   .notes-list {
     width: 25%;
